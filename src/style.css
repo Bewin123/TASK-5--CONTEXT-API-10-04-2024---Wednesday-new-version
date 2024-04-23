@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+}
+
+.h-full {
+  height: 100vh;
+}
+
+.quizContainer {
+  position: relative;
+  height: calc(100%);
+  > .quizSidebar {
+    width: 80px;
+    height: 100%;
+    background-color: lightblue;
+    padding: 20px 0;
+  }
+  > .quizContentContainer {
+    display: flex;
+    width: calc(100% - 80px);
+    max-width: 40%;
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    align-items: center;
+    > .quizForm {
+      position: relative;
+      min-width: 100%;
+      > .quizOptions {
+        width: 100%;
+      }
+      > .quizFooter {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.optionCta {
+  height: 40px;
+  margin-bottom: 10px;
+  border: 2px solid #cdcdcd;
+}
+
+.selected {
+  background-color: lightblue;
+  border: 2px solid lightblue;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  > label {
+    margin-bottom: 5px;
+  }
+
+  > input {
+    height: 50px;
+    padding-inline-start: 10px;
+    border-radius: 5px;
+  }
+
+  > .error {
+    color: red;
+  }
+}
